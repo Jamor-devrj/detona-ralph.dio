@@ -35,12 +35,6 @@ function countDown(){
         location.reload();
     }   
 }
-
-function playSound(audioName){
-    let audio = new Audio(`./src/audios/${audioName}.mp3`)
-    audio.volume = 0.2;    
-    audio.play();       
-}
 function themeSound(){
     let intro = new Audio("./src/audios/intro.mp3")
     intro.volume = 0.2;   
@@ -48,7 +42,11 @@ function themeSound(){
     intro.play();
 }
 
-themeSound();
+function playSound(audioName){
+    let audio = new Audio(`./src/audios/${audioName}.mp3`)
+    audio.volume = 0.2;    
+    audio.play();       
+}
 
 function randomSquare(){
     //vai buscar e remover a classe enemy
@@ -63,7 +61,8 @@ function randomSquare(){
     state.values.hitPosition = randomSquare.id; // vai guardar o id do square que pode ser clicado
 }
 
-function addListenerHitBox(){    
+function addListenerHitBox(){ 
+    themeSound();   
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () =>{
             let result = 0;
