@@ -5,13 +5,14 @@ const state = {
         timeLeft: document.querySelector("#time-left"),
         score: document.querySelector("#score"),
         lives: document.querySelector("#lives"),
-        //querySelecto e querySelectorAll 
+        //querySelecto e querySelectorAll
+        
     },
     values: {
         gameVelocity: 1000,
         hitPosition: 0,
         result: 0,
-        currentTime: 61,
+        currentTime: 60,
         currentLives: 3,
     },
     actions: {
@@ -20,7 +21,7 @@ const state = {
     }    
 };
 
-function countDown(){
+function countDown(){        
     state.values.currentTime--;
     state.view.timeLeft.textContent = state.values.currentTime;
 
@@ -32,7 +33,6 @@ function countDown(){
         location.reload();
     }   
 }
-
 
 function playSound(){
     let audio = new Audio("./src/audios/hit.m4a")
@@ -70,12 +70,13 @@ function addListenerHitBox(){
                 state.values.currentLives = 4;  
                 location.reload();                 
             }                
-        });
+        });        
     });
 }
 
-function initialize() {   
+function initialize() {       
     addListenerHitBox();
+    
 }
 
 initialize();

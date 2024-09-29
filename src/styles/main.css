@@ -27,15 +27,18 @@
 .square{
     height: 150px;
     width: 150px;
-    border: 1px solid #000000;
-    background-color: #2280e0;    
-    background-image: url("..//img/sky.png");
+    border: 0.5rem groove #a6a68b;
+    background-color: #2280e0;
+    background-image: url("..//img/clound.png");
     background-size: cover;
+    margin: 0.8rem; 
+    cursor: no-drop;   
 }
 
 .enemy{
     background-image: url("../img/ralph.gif");
     background-size: auto;
+    cursor: grab;
 }
 
 .menu-lives{
@@ -49,3 +52,13 @@
     margin-top: 1rem;
 }
 
+button{
+    cursor: pointer;
+    background-color: #ffd700;
+    border:5px #000000 solid ;
+    color :#e02222;
+    border-radius: 1rem;
+    font-size: 100%;
+    width: 100px;
+    height: 50px;    
+}
