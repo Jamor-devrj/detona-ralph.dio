@@ -5,3 +5,9 @@
     /*font-family: "Bebas Neue", sans-serif;*/
     font-family: "Press Start 2P", system-ui;      
 }
+p{
+    color: #ffffff;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    margin: 0.5rem;
+}
