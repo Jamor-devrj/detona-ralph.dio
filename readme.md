@@ -20,7 +20,7 @@ Faça a maior pontuação que puder dentro do tempo.
 * Tela de fim de jogo
 * Deploi na Vercel
 
-[Clique aqui para jogar](https://https://detona-ralph-byjaime.vercel.app/)
+[Clique aqui para jogar](https://detona-ralph-byjaime.vercel.app/)
 
 <img src="/src/img/detonaralph1.gif">
 
