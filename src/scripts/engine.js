@@ -62,9 +62,10 @@ function randomSquare(){
 }
 
 function addListenerHitBox(){ 
-    themeSound();   
+      
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () =>{
+            themeSound(); 
             let result = 0;
             let meta = state.values.record;
             if(square.id === state.values.hitPosition){
