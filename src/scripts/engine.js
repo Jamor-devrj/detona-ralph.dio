@@ -48,6 +48,8 @@ function themeSound(){
     intro.play();
 }
 
+themeSound();
+
 function randomSquare(){
     //vai buscar e remover a classe enemy
     state.view.squares.forEach((square) =>{
@@ -99,5 +101,4 @@ function addListenerHitBox(){
 function initialize() {  
     addListenerHitBox(); 
 };
-themeSound();
 initialize();
