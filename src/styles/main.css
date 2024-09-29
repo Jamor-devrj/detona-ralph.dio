@@ -7,14 +7,15 @@
 
 footer{
     display: flex;
-    flex-direction: column;
+
     background-color: #000000;
     height: 10vh;
     border-top: 5px solid #ffd700;
     color: #ff0000;
     display: flex;
     align-items: center;   
-    justify-content: center;     
+    justify-content: space-evenly; 
+
 }
 
 
@@ -22,7 +23,6 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     height: 90px;
     width: 100%;
     background-color: #000000;
@@ -45,7 +45,7 @@ footer{
     background-color: #2280e0;
     background-image: url("..//img/clound.png");
     background-size: cover;
-    margin: 0.8rem; 
+    margin: 0.5rem; 
     cursor: no-drop;   
 }
 
@@ -66,7 +66,7 @@ footer{
 .menu-meta h2:nth-child(2){
     margin-top: 1rem;
 }
-
+/*
 button{
     cursor: pointer;
     background-color: #ffd700;
@@ -77,3 +77,4 @@ button{
     width: 100px;
     height: 50px;    
 }
+    */
