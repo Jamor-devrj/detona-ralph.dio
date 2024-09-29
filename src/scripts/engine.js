@@ -97,8 +97,7 @@ function addListenerHitBox(){
 };
 
 function initialize() {  
-    themeSound();
     addListenerHitBox(); 
 };
-
+themeSound();
 initialize();
