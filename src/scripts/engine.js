@@ -98,6 +98,7 @@ function addListenerHitBox(){
 };
 
 function initialize() {  
+    alert("vamos jogar?")
     addListenerHitBox(); 
 };
 initialize();
